@@ -1,0 +1,21 @@
+<h1>All our flat</h1>
+<h4><%= "all #{@flats.length} flat"%></h4>
+<ul>
+    <% @flats.each do |flat|%>
+    <li class="hotel">
+      <img src="<%= flat.picture %>">
+      <%= flat.name %>
+      <br>
+      <%= flat.address %>
+      <br>
+      <%= flat.description %>
+      <br>
+      <%= "€ #{flat.price_per_night}" %>
+      <br>
+      <%= "#{flat.number_of_guests} guests maximum" %>
+      <br>
+      <%= link_to "All flats", flats_path %>
+    </li>
+  <% end %>
+
+</ul>

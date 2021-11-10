@@ -1,0 +1,31 @@
+@import "bootstrap/scss/bootstrap";
+
+.banner {
+  display: flex;
+  justify-content: space-between;
+  background-color: lightgray;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  width: 1000px;
+  margin-top: 30px;
+}
+
+.hotel {
+  display: grid;
+  width: 200px;
+  border: lightgray solid 3px;
+  background-color: lightgray;
+}
+
+.hotel img {
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+}
+
+img {
+
+}

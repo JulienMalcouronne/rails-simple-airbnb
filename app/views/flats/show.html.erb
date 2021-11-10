@@ -1,0 +1,31 @@
+<div class="banner">
+<h1>simple airbnb</h1>
+  <%= link_to "add a flat", flat_path("new")  %>
+</div>
+<div  class="hotel">
+  <img src="<%= @flat.picture %>">
+  <div>
+  <%= @flat.name %>
+  <%= @flat.address %>
+  </div>
+
+  <div>
+  <h3>A bit more about this flat...</h3>
+  <%= @flat.description %>
+  </div>
+
+  <div>
+  <%= "€ #{@flat.price_per_night}" %>
+  <%= "#{@flat.number_of_guests} guests maximum" %>
+  </div>
+
+
+
+<%= link_to "Remove",
+            flat_path(@flat),
+            method: :delete,
+            data: { confirm: "Are you sure?" } %>
+
+<%= link_to "Edit", edit_flat_path %>
+<%= link_to "All flats", flats_path %>
+</div>
